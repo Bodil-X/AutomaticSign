@@ -1,0 +1,4 @@
+cron:
+- description: every day job
+  url: /Attend
+  schedule: every day 10:30
