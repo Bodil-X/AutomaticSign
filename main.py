@@ -25,7 +25,7 @@ class MainHandler(webapp2.RequestHandler):
         if user:
             self.response.write(user.nickname())
         else:
-            self.response.write('Hello world111!')
+            self.redirect(users.create_login_url(self.request.uri))
 
 
 class AttendHandler(webapp2.RequestHandler):
