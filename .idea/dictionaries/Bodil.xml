@@ -1,7 +1,11 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Bodil">
     <words>
+      <w>autoescape</w>
       <w>bodil</w>
+      <w>jinja</w>
+      <w>staticfile</w>
+      <w>succ</w>
     </words>
   </dictionary>
 </component>

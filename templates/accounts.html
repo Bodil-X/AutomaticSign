@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+    <title>All Accounts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet"
+          href="http://cdn.staticfile.org/twitter-bootstrap/3.0.2/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet"
+          href="http://cdn.staticfile.org/twitter-bootstrap/3.0.2/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <a href="#createModal" data-toggle="modal" class="btn btn-link">Create Account</a>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>Author</th>
+                <th>Account</th>
+                <th>Type</th>
+                <th>Create Time</th>
+                <th>Last Modified</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for account in accounts %}
+            <tr>
+                <td>{{ account.author.nickname() }}</td>
+                <td>{{ account.acct }}</td>
+                <td>{{ account.acctType }}</td>
+                <td>{{ account.createdTime }}</td>
+                <td>{{ account.lastModifiedTime }}</td>
+                <td>
+                    <a href="#" class="btn btn-default">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="createModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Create Account</h4>
+            </div>
+            <div class="modal-body">
+                <form id="createAcctForm" action="/Accounts/Create" method="post" class="form-horizontal"
+                      data-ajax="true"
+                      data-ajax-method="post" data-ajax-success="createAcctSucc">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Account</label>
+
+                        <div class="col-md-10">
+                            <input type="text" name="acct" placeholder="Account" data-val="true"
+                                   data-val-required="Account is required."/>
+                            <span class="help-inline">
+                                <span class="text-danger" data-valmsg-for="acct" data-valmsg-replace="true"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Password</label>
+
+                        <div class="col-md-10">
+                            <input type="password" name="psw" placeholder="Password" data-val="true"
+                                   data-val-required="Password is required."/>
+                            <span class="help-inline">
+                                <span class="text-danger" data-valmsg-for="psw" data-valmsg-replace="true"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Type</label>
+
+                        <div class="col-md-10">
+                            <select name="acctType" data-val="true" data-val-required="Type is required.">
+                                <option value="">--Select--</option>
+                                <option value="smzdm">SMZDM</option>
+                            </select>
+                            <span class="help-inline">
+                                <span class="text-danger" data-valmsg-for="acctType" data-valmsg-replace="true"></span>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="btnCreateAcct" type="button" class="btn btn-primary">Create Account</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script type="text/javascript"
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/mvc/5.0/jquery.validate.unobtrusive.min.js"></script>
+<!--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js"></script>-->
+
+<script type="text/javascript">
+    $(function () {
+        $('#btnCreateAcct').on('click', function () {
+            if ($('#createAcctForm').valid()) {
+                $('#createAcctForm').submit();
+            }
+        });
+    });
+
+    function createAcctSucc(result) {
+        if (result && result.success) {
+            window.location.href = '/Accounts';
+            return;
+        }
+        if (result && result.message) {
+            alert(result.message);
+        }
+    }
+</script>
+</html>
+{% endautoescape %}

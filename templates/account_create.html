@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+    <title>Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet"
+          href="http://cdn.staticfile.org/twitter-bootstrap/3.0.2/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet"
+          href="http://cdn.staticfile.org/twitter-bootstrap/3.0.2/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+<div class="container">
+    <form action="/Accounts/Create" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label class="col-md-2 control-label">Account</label>
+            <div class="col-md-10">
+                <input type="text" name="acct" placeholder="Account" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Password</label>
+            <div class="col-md-10">
+                <input type="password" name="psw" placeholder="Password" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Type</label>
+            <div class="col-md-10">
+                <select name="acctType">
+                    <option value="">--Select--</option>
+                    <option value="smzdm">SMZDM</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+</html>
+{% endautoescape %}

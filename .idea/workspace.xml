@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6888a45-cd42-4edb-b1fa-9d3f73c2205b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model.py" />
+    <list default="true" id="b6888a45-cd42-4edb-b1fa-9d3f73c2205b" name="Default" comment="add accounts management">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account_create.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/accounts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Bodil.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Bodil.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.yaml" afterPath="$PROJECT_DIR$/app.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.py" afterPath="$PROJECT_DIR$/model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AttendApp.iws" />
@@ -17,11 +21,11 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AttendApp$AttendApp.coverage" NAME="AttendApp Coverage Results" MODIFIED="1385614354818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AttendApp$AttendApp.coverage" NAME="AttendApp Coverage Results" MODIFIED="1385968395832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AttendApp$attend.coverage" NAME="attend Coverage Results" MODIFIED="1385357117358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="D:\WorkZone\GitHub\AutomaticSign" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -35,16 +39,67 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+            <state line="26" column="35" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
+              <folding>
+                <element signature="e#601#639#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accounts.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="25" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+              <folding>
+                <marker date="1385974862222" expanded="true" signature="0:104" placeholder="import ..." />
+                <marker date="1385974862222" expanded="true" signature="400:777" placeholder="..." />
+                <marker date="1385974862222" expanded="true" signature="419:777" placeholder="..." />
+                <marker date="1385974862222" expanded="true" signature="821:1297" placeholder="..." />
+                <marker date="1385974862222" expanded="true" signature="840:970" placeholder="..." />
+                <marker date="1385974862222" expanded="true" signature="991:1297" placeholder="..." />
+                <marker date="1385974862222" expanded="true" signature="1339:1388" placeholder="..." />
+                <marker date="1385974862222" expanded="true" signature="1358:1388" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="26" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+              <folding>
+                <marker date="1385959128628" expanded="true" signature="107:150" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model.py">
+      <file leaf-file-name="accounts.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/accounts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="216" selection-end="216" vertical-scroll-proportion="0.20236686" vertical-offset="0" max-vertical-offset="845">
+            <state line="24" column="19" selection-start="826" selection-end="826" vertical-scroll-proportion="-0.4400978" vertical-offset="816" max-vertical-offset="1634">
+              <folding>
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_create.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/account_create.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="14" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-17.62963" vertical-offset="189" max-vertical-offset="1007">
               <folding />
             </state>
           </provider>
@@ -70,9 +125,13 @@
       <list>
         <option value="$PROJECT_DIR$/attend.py" />
         <option value="$PROJECT_DIR$/cron.yaml" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Account.py" />
         <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/app.yaml" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/templates/account_create.html" />
+        <option value="$PROJECT_DIR$/accounts.py" />
+        <option value="$PROJECT_DIR$/templates/accounts.html" />
       </list>
     </option>
   </component>
@@ -81,6 +140,58 @@
     <option name="y" value="-8" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Django</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Python</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -108,7 +219,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,20 +239,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="232" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="231" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="234" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="234" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="235" />
@@ -154,8 +260,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="editor.preferences.folding" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -227,22 +339,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AttendApp" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,6 +361,22 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AttendApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -280,6 +392,9 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -303,9 +418,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -403,6 +515,15 @@
       <created>1374029335993</created>
       <updated>1374029335993</updated>
     </task>
+    <task id="LOCAL-00001" summary="add model">
+      <created>1385702773430</created>
+      <updated>1385702773430</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add accounts management">
+      <created>1385976719236</created>
+      <updated>1385976719236</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -434,8 +555,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23133415" sideWeight="0.56766057" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23439412" sideWeight="0.60091746" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43233946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -444,6 +565,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -456,66 +578,20 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="true" />
+    <MESSAGE value="add model" />
+    <MESSAGE value="add accounts management" />
+    <option name="LAST_COMMIT_MESSAGE" value="add accounts management" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="13" />
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Study/firefoxgirl/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="29" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.08382353" vertical-offset="1026" max-vertical-offset="3230" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Google/google_appengine/lib/webapp2-2.5.2/webapp2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1101" column="0" selection-start="38248" selection-end="38248" vertical-scroll-proportion="0.0" vertical-offset="20469" max-vertical-offset="37563" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/shutdown.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.4963181" vertical-offset="556" max-vertical-offset="1235" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/wsgi_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="0" selection-start="4560" selection-end="4560" vertical-scroll-proportion="0.24300441" vertical-offset="2286" max-vertical-offset="7296" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1237" column="0" selection-start="51429" selection-end="51429" vertical-scroll-proportion="0.24300441" vertical-offset="22502" max-vertical-offset="44460" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/python/runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.55228275" vertical-offset="2133" max-vertical-offset="2812" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Google/google_appengine/lib/cherrypy/cherrypy/wsgiserver/wsgiserver2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="997" column="37" selection-start="35485" selection-end="35485" vertical-scroll-proportion="0.4388807" vertical-offset="18645" max-vertical-offset="44232" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/tee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="33" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.6082474" vertical-offset="328" max-vertical-offset="1007" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.67157584" vertical-offset="0" max-vertical-offset="779" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="70" selection-end="70" vertical-scroll-proportion="0.1223176" vertical-offset="0" max-vertical-offset="466" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.73480666" vertical-offset="399" max-vertical-offset="10146" />
@@ -531,24 +607,109 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.4352518" vertical-offset="242" max-vertical-offset="798" />
       </provider>
     </entry>
+    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/python/runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="0" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.0" vertical-offset="2315" max-vertical-offset="2812">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1237" column="0" selection-start="51429" selection-end="51429" vertical-scroll-proportion="0.0" vertical-offset="22502" max-vertical-offset="44460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Google/google_appengine/lib/cherrypy/cherrypy/wsgiserver/wsgiserver2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1291" column="0" selection-start="47435" selection-end="47435" vertical-scroll-proportion="0.33199194" vertical-offset="24364" max-vertical-offset="44232">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/wsgi_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.33199194" vertical-offset="1925" max-vertical-offset="7296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/http_runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="251" column="0" selection-start="10222" selection-end="10222" vertical-scroll-proportion="0.33199194" vertical-offset="4262" max-vertical-offset="5206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Google/google_appengine/google/appengine/tools/devappserver2/shutdown.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.33199194" vertical-offset="728" max-vertical-offset="1235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Google/google_appengine/lib/webapp2-2.5.2/webapp2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1101" column="33" selection-start="38281" selection-end="38281" vertical-scroll-proportion="0.3525641" vertical-offset="20469" max-vertical-offset="37563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="242" selection-end="242" vertical-scroll-proportion="0.6495727" vertical-offset="0" max-vertical-offset="468">
+        <state line="16" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+        <state line="26" column="35" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
+          <folding>
+            <element signature="e#601#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="14" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-17.62963" vertical-offset="189" max-vertical-offset="1007">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="216" selection-end="216" vertical-scroll-proportion="0.20236686" vertical-offset="0" max-vertical-offset="845">
-          <folding />
+        <state line="13" column="26" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <folding>
+            <marker date="1385959128628" expanded="true" signature="107:150" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+          <folding>
+            <marker date="1385974862222" expanded="true" signature="0:104" placeholder="import ..." />
+            <marker date="1385974862222" expanded="true" signature="400:777" placeholder="..." />
+            <marker date="1385974862222" expanded="true" signature="419:777" placeholder="..." />
+            <marker date="1385974862222" expanded="true" signature="821:1297" placeholder="..." />
+            <marker date="1385974862222" expanded="true" signature="840:970" placeholder="..." />
+            <marker date="1385974862222" expanded="true" signature="991:1297" placeholder="..." />
+            <marker date="1385974862222" expanded="true" signature="1339:1388" placeholder="..." />
+            <marker date="1385974862222" expanded="true" signature="1358:1388" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="19" selection-start="826" selection-end="826" vertical-scroll-proportion="-0.4400978" vertical-offset="816" max-vertical-offset="1634">
+          <folding>
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

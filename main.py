@@ -17,13 +17,14 @@
 from google.appengine.api import users
 import webapp2
 from attend import get_cookie, attendance
+import accounts
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
         if user:
-            self.response.write(user.nickname())
+            self.redirect('Accounts')
         else:
             self.redirect(users.create_login_url(self.request.uri))
 
@@ -35,4 +36,5 @@ class AttendHandler(webapp2.RequestHandler):
         self.response.write(attend_dict)
 
 
-app = webapp2.WSGIApplication([('/', MainHandler), ('/Attend', AttendHandler)], debug=True)
+app = webapp2.WSGIApplication([('/', MainHandler), ('/Attend', AttendHandler), ('/Accounts', accounts.MainPage),
+                               ('/Accounts/Create', accounts.CreatePage)], debug=True)
