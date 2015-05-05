@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: UTF-8 -*-
 #
 # Copyright 2007 Google Inc.
 #
@@ -6,7 +7,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,8 +17,10 @@
 #
 from google.appengine.api import users
 import webapp2
-from attend import get_cookie, attendance
+
 import accounts
+from model import Account
+from smzdm import Smzdm
 
 
 class MainHandler(webapp2.RequestHandler):
@@ -31,10 +34,22 @@ class MainHandler(webapp2.RequestHandler):
 
 class AttendHandler(webapp2.RequestHandler):
     def get(self):
-        cookie = get_cookie('xxc3303', '62570303')
-        attend_dict = attendance(cookie)
-        self.response.write(attend_dict)
+        user = users.get_current_user()
+        accounts_query = Account.query(Account.author == user)
+        accounts = accounts_query.fetch()
+        resp_list = []
+        for account in accounts:
+            smzdm_handler = Smzdm(account)
+            attend_dict = smzdm_handler.attendance()
+            resp_list.append(attend_dict)
+        self.response.write(resp_list)
+
+
+class TestCookieHandler(webapp2.RequestHandler):
+    def get(self):
+        pass
 
 
 app = webapp2.WSGIApplication([('/', MainHandler), ('/Attend', AttendHandler), ('/Accounts', accounts.MainPage),
-                               ('/Accounts/Create', accounts.CreatePage)], debug=True)
+                               ('/Accounts/Create', accounts.CreatePage), ('/TestCookie', TestCookieHandler)],
+                              debug=True)

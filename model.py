@@ -14,3 +14,4 @@ class Account(ndb.Model):
     acctType = ndb.StringProperty()
     createdTime = ndb.DateTimeProperty(auto_now_add=True)
     lastModifiedTime = ndb.DateTimeProperty(auto_now=True)
+    # cookies = ndb.JsonProperty()
