@@ -7,6 +7,7 @@ from google.appengine.api import urlfetch
 import urllib
 import urllib2
 import json
+import Cookie
 
 from model import Account
 
@@ -36,20 +37,23 @@ class Smzdm(object):
         # self.cookie = StringCookieJar()
         # self.opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(self.cookie))
         # self.opener.open(self.login_url, post_data)
-        result = urlfetch.fetch(self.login_url, post_data, urlfetch.POST, self.headers)
-        if result.status_code == 200:
-            self.headers['Cookie'] = result.headers.get('set-cookie')
+        login_headers = self.headers.copy()
+        login_headers['Cookie'] = ''
+        result = urlfetch.fetch(self.login_url, post_data, urlfetch.POST, login_headers)
+        if result.status_code == 200 and result.headers.get('set-cookie'):
+            cookie = Cookie.SimpleCookie()
+            cookie.load(result.headers.get('set-cookie'))
+            self.headers['Cookie'] = ';'.join([x.key + '=' + x.value for x in cookie.values()])
+            print self.headers['Cookie']
 
     def attendance(self):
         # req = urllib2.Request(self.attend_url, headers=self.headers)
         try:
             # result = self.opener.open(req).read()
-            result = urlfetch.fetch(self.attend_url, headers=self.headers, follow_redirects=False)
-            if result.status_code == 200:
-                json_dict_result = json.loads(result.content)
-                print json_dict_result
+            result = urlfetch.fetch(self.attend_url, headers=self.headers)
+            if result.status_code == 200 and result.content:
+                json_dict_result = json.loads(result.content[1:len(result.content) - 1])
                 return json_dict_result
-            print result.content
             return result.status_code
         except urllib2.HTTPError, e:
             print e

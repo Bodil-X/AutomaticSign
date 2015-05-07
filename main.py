@@ -16,6 +16,7 @@
 # limitations under the License.
 #
 from google.appengine.api import users
+from google.appengine.api import urlfetch
 import webapp2
 
 import accounts
@@ -45,11 +46,12 @@ class AttendHandler(webapp2.RequestHandler):
         self.response.write(resp_list)
 
 
-class TestCookieHandler(webapp2.RequestHandler):
+class TestHandler(webapp2.RequestHandler):
     def get(self):
-        pass
+        result = urlfetch.fetch('http://www.smzdm.com/user/qiandao/jsonp_checkin')
+        self.response.write(result.content)
 
 
 app = webapp2.WSGIApplication([('/', MainHandler), ('/Attend', AttendHandler), ('/Accounts', accounts.MainPage),
-                               ('/Accounts/Create', accounts.CreatePage), ('/TestCookie', TestCookieHandler)],
+                               ('/Accounts/Create', accounts.CreatePage), ('/Test', TestHandler)],
                               debug=True)
